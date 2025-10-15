@@ -1,3 +1,4 @@
+// frontend/src/App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
@@ -10,6 +11,9 @@ import Inventario from './components/Inventario';
 import Proveedores from './components/Proveedores';
 import AgregarProducto from './components/AgregarProducto';
 import AgregarProveedor from './components/AgregarProveedor';
+// --- NUEVOS COMPONENTES ---
+import EditarProducto from './components/EditarProducto';
+import EditarProveedor from './components/EditarProveedor';
 
 
 function App() {
@@ -25,6 +29,10 @@ function App() {
             <Route path="/proveedores" element={<Proveedores />} />
             <Route path="/agregar-producto" element={<AgregarProducto />} />
             <Route path="/agregar-proveedor" element={<AgregarProveedor />} />
+            
+            {/* --- RUTAS NUEVAS --- */}
+            <Route path="/editar-producto/:id" element={<EditarProducto />} />
+            <Route path="/editar-proveedor/:id" element={<EditarProveedor />} />
           </Routes>
         </main>
         
@@ -46,6 +54,3 @@ function App() {
 }
 
 export default App;
-
-
-

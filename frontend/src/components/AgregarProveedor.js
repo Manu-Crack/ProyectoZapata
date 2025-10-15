@@ -131,7 +131,7 @@ const AgregarProveedor = () => {
                     name="telefono"
                     value={formData.telefono}
                     onChange={handleChange}
-                    placeholder="Ej: +1-555-0101"
+                    placeholder="Ej: +51 910108888"
                   />
                   <Form.Text className="text-muted">
                     Número de teléfono de contacto (opcional)
